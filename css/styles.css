@@ -320,6 +320,13 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.link-info-menu-tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
 .icon-list-menu {
   display: flex;
   align-items: center;
@@ -353,8 +360,6 @@ button {
 
 .section-title {
   background: #2e2f42;
-  height: 432px;
-
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -366,7 +371,7 @@ button {
   width: 100%;
   margin: 0 auto;
   max-width: 320px;
-  margin-bottom: 96px;
+  padding: 72px 0 72px;
 }
 
 .title {
@@ -379,7 +384,6 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-top: 72px;
 }
 .button {
   font-weight: 500;
@@ -403,7 +407,6 @@ button {
 @media screen and (min-width: 768px) {
   .section-title {
     background: #2e2f42;
-    height: 436px;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -413,10 +416,8 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     margin: 0 auto;
     max-width: 768px;
-    margin-bottom: 96px;
   }
   .title {
     max-width: 496px;
@@ -428,14 +429,12 @@ button {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-top: 112px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .section-title {
     background: #2e2f42;
-    height: 600px;
 
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -445,9 +444,9 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     margin: 0 auto;
     max-width: 1440px;
+    padding: 188px 0 188px;
   }
   .title {
     max-width: 496px;
@@ -459,17 +458,22 @@ button {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    padding-top: 188px;
   }
 }
 /* section 2 */
+
+.section-advantages {
+  padding: 96px 0 96px;
+}
 
 .advantages-icon {
   display: none;
 }
 
 .advantages-list {
-  margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .strategy {
   font-weight: 700;
@@ -478,7 +482,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .strategy-p {
@@ -488,7 +492,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 72px;
 }
 
 .strategy-p-2 {
@@ -499,11 +502,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-    margin: 96px 0;
   }
   .advantages-item {
     width: 356px;
-    height: 120px;
   }
   .strategy {
     font-weight: 700;
@@ -562,8 +563,7 @@ button {
     color: #434455;
   }
   .section-advantages {
-    height: 224px;
-    margin-bottom: 120px;
+    padding: 120px 0;
   }
 }
 
@@ -573,6 +573,7 @@ button {
   min-width: 320px;
   height: auto;
   background: #f4f4fd;
+  padding: 96px 0;
 }
 
 .container-team {
@@ -590,13 +591,16 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list {
   min-width: 264px;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px;
 }
 
 .team-item {
@@ -607,10 +611,6 @@ button {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  margin-bottom: 72px;
-}
-.team-item-2 {
-  margin-bottom: 96px;
 }
 
 .name-team {
@@ -679,11 +679,15 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  section {
+    padding-bottom: 120px;
+  }
+}
 /* section 4*/
 
-.container-section-4 {
-  margin-top: 96px;
-  margin-bottom: 96px;
+.our-portfolio {
+  padding: 96px 0 96px;
 }
 
 .portfolio {
@@ -693,47 +697,45 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-item {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  margin-bottom: 48px;
   max-width: 288px;
   height: 400px;
 }
 
-.portfolio-name {
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 8px;
+.portfolio-item:not(:last-child) {
+  margin-bottom: 48px;
 }
 
-.portfolio-p {
-  padding-left: 16px;
-}
 .overlay {
   display: none;
 }
-
+.container-portfolio {
+  padding: 32px 16px;
+}
+.portfolio-name {
+  margin-bottom: 8px;
+}
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
   }
-  .container-section-4 {
-    margin-top: 96px;
-    margin-bottom: 96px;
-    width: 736px;
-  }
+
   .portfolio-item {
     max-width: 356px;
     height: 420px;
     width: calc((100% - 24px) / 2);
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -788,15 +790,18 @@ button {
     position: relative;
     overflow: hidden;
   }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 /* footer */
 
-.container-footer {
-  width: 320px;
-  height: 664px;
+.footer-page {
   background: #2e2f42;
-  padding-top: 96px;
+  padding: 96px 0 96px;
+}
+.container-footer {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -905,17 +910,22 @@ button {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    width: 768px;
-    height: 456px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
+  }
+  .footer-page {
+    padding: 96px 108px;
   }
   .container-stodio {
     width: 264px;
-    height: 112px;
-    margin-left: 108px;
+  }
+  .social-media {
+    text-align: left;
+  }
+  .subscribe-p {
+    text-align: left;
   }
   .footer-logo {
     text-align: left;
@@ -924,14 +934,10 @@ button {
     width: 208px;
     height: 80px;
   }
-  .container-subscribe {
-    width: 453px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 108px;
+
+  .input-subscribe {
+    width: 264px;
+    margin-bottom: 0;
   }
   .form-subscribe {
     display: flex;
@@ -945,6 +951,7 @@ button {
 @media screen and (min-width: 1158px) {
   .footer-page {
     background: #2e2f42;
+    padding: 108px 0;
   }
   .footer-p {
     font-weight: 400;
@@ -981,8 +988,8 @@ button {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    width: 1440px;
-    height: 312px;
+    padding: 0 15px;
+    gap: 0;
   }
   .footer-list .social-link-footer:hover {
     width: 40px;
@@ -1009,16 +1016,28 @@ button {
     margin-right: 120px;
   }
   .container-social {
-    margin-right: 80px;
+    margin-right: auto;
   }
   .container-subscribe {
     margin: 0;
-    width: 453px;
+    
     margin-left: 0;
   }
+  .input-subscribe {
+    min-width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
   .modal-form-label {
-    
-}
+  }
 }
 
 /* modal */
@@ -1050,7 +1069,7 @@ button {
   border-radius: 4px;
   width: 288px;
   height: 623px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 16px 16px;
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1326,7 +1345,7 @@ button {
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
   .modal-form-wrapper {
     position: relative;
