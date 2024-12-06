@@ -365,6 +365,7 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/main-title/Dark-bg-mob.jpg);
+    
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,6 +373,16 @@ button {
   margin: 0 auto;
   max-width: 320px;
   padding: 72px 0 72px;
+}
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2pddx) {
+  .section-title {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-title/Dark-bg@2x-mob.jpg);
+  }
 }
 
 .title {
@@ -413,12 +424,30 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/main-title/Dark-bg-tab.jpg);
+      
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 768px;
   }
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2pddx) {
+    .section-title {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-title/Dark-bg@2x-tab.jpg);
+      
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 768px;
+    }
+  }
+  
+
   .title {
     max-width: 496px;
     text-align: center;
@@ -448,6 +477,23 @@ button {
     max-width: 1440px;
     padding: 188px 0 188px;
   }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2pddx) {
+    .section-title {
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-title/people-office@2x.jpg);
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 188px 0 188px;
+    }
+  }
+  
   .title {
     max-width: 496px;
     text-align: center;
@@ -524,6 +570,7 @@ button {
   .container-advantages {
     display: none;
   }
+  
 }
 
 @media screen and (min-width: 1158px) {
